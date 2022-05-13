@@ -4,12 +4,12 @@ var color = document.getElementById('#colorPicker');
 var height = document.getElementById('#inputHeight');
 var width = document.getElementById('#inputWidth');
 // When size is submitted by the user, call makeGrid()
-var tableSize = document.getElementById('#sizePicker');
-tableSize.addEventListener('submit', function (event) {
-  event.preventDefault();
-  var height = document.getElementById('inputHeight').value;
-  var width = document.getElementById('inputWidth').value;
-  makeGrid(height, width);
+var sizePicker = document.getElementById('#sizePicker');
+sizePicker.addEventListener("click", function (event) {
+    event.preventDefault();
+    let height = document.getElementById('inputHeight').value;
+    let width = document.getElementById('inputWidth').value;
+    makeGrid(height, width);
 });
 
 function makeGrid(height, width) {
