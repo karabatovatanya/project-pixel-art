@@ -1,9 +1,9 @@
 
 // Select color input
-var color = document.getElementById('#colorPicker');
+var colorPicker = document.querySelector('#colorPicker');
 // Select size input
-var height = document.getElementById('#inputHeight');
-var width = document.getElementById('#inputWidth');
+var height = document.querySelector('#inputHeight');
+var width = document.querySelector('#inputWidth');
 // When size is submitted by the user, call makeGrid()
 let sizePicker = document.querySelector('#sizePicker');
 sizePicker.addEventListener("click", function (event) {
@@ -25,6 +25,6 @@ function makeGrid(height, width) {
     table.appendChild(row)
   }
   table.addEventListener("click", function (event) {
-      event.target.style.backgroundColor = color.value
+      event.target.style.backgroundColor = colorPicker.value;
   });
 }
