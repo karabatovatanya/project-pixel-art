@@ -1,4 +1,3 @@
-
 // Select color input
 var colorPicker = document.querySelector('#colorPicker');
 // Select size input
@@ -12,7 +11,7 @@ sizePicker.addEventListener("click", function (event) {
     var width = document.querySelector('#inputWidth').value;
     makeGrid(height, width);
 });
-
+// Create a grid
 function makeGrid(height, width) {
   var table = document.querySelector('#pixelCanvas');
   table.innerHTML = "";
@@ -24,6 +23,7 @@ function makeGrid(height, width) {
     }
     table.appendChild(row)
   }
+  // Color the pixels
   table.addEventListener("click", function (event) {
       event.target.style.backgroundColor = colorPicker.value;
   });
