@@ -4,7 +4,7 @@ var color = document.getElementById('#colorPicker');
 var height = document.getElementById('#inputHeight');
 var width = document.getElementById('#inputWidth');
 // When size is submitted by the user, call makeGrid()
-var sizePicker = document.getElementById('#sizePicker');
+var sizePicker = document.querySelector('#sizePicker');
 sizePicker.addEventListener("click", function (event) {
     event.preventDefault();
     let height = document.getElementById('inputHeight').value;
