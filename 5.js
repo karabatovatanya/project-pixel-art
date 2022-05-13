@@ -25,5 +25,5 @@ function makeGrid(height, width) {
   }
   //table.addEventListener("click", function (event) {
       //event.target.style.backgroundColor = color.value
-  })
+  //})
 }
