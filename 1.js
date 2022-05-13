@@ -14,6 +14,7 @@ sizePicker.addEventListener("click", function (event) {
 
 function makeGrid(height, width) {
   var table =  document.querySelector('#pixelCanvas');
+    table.innerHTML = "";
   for (var i = 1; i <= height; i++) {
     var row = document.createElement('tr');
     for (var j = 1; j <= width; j++) {
