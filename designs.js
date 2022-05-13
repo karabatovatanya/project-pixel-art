@@ -10,16 +10,7 @@ tableSize.addEventListener('submit', function (event) {
   event.preventDefault();
   height = height.val();
   width = widht.val();
-  makeGrid(height, width)
+  //makeGrid(height, width)
 })
 
-function makeGrid(height, width) {
-  for (var i = 1; i <= height; i++) {
-    var row = table.createElement('tr');
-    table.appendChild(row);
-    for (var j = 1; j <= width; j++) {
-      var column = table.createElement('td');
-      column.appendChild(column);
-    }
-  }
-}
+
