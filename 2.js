@@ -7,6 +7,8 @@ var width = document.getElementById('#inputWidth');
 let sizePicker = document.querySelector('#sizePicker');
 sizePicker.addEventListener("click", function(event) {
     event.preventDefault();
+    var height = document.getElementById('#inputHeight').value;
+    var width = document.getElementById('#inputWidth').value;
     makeGrid();
 });
 
