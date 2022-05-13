@@ -4,10 +4,10 @@ var color = document.getElementById('#colorPicker');
 var height = document.getElementById('#inputHeight');
 var width = document.getElementById('#inputWidth');
 // When size is submitted by the user, call makeGrid()
-var tableSize = document.getElementById("#sizePicker");
-tableSize.addEventListener('submit', function (event) {
+var tableSize = document.getElementById('#sizePicker');
+tableSize.addEventListener(function (event) {
   event.preventDefault();
-  makeGrid(height, width)
+  makeGrid(height, width);
 })
 
 function makeGrid(height, width) {
