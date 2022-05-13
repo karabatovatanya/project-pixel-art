@@ -8,10 +8,12 @@ var table =  document.getElementById('#pixelCanvas');
 var tableSize = document.getElementById("#sizePicker");
 tableSize.addEventListener('submit', function (event) {
   event.preventDefault();
-  makeGrid(height.value, width.value)
+  height = height.val();
+  width = widht.val();
+  makeGrid(height, width)
 })
 
-function makeGrid(height.value, width.value) {
+function makeGrid(height, width) {
   for (var i = 1; i <= height; i++) {
     var row = table.createElement('tr');
     table.appendChild(row);
